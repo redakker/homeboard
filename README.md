@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
 
 This is a frontend for a clever home project. It uses RethinkDB with Horizon.io for backend (backendless project).
-There is some server logic which put data to database about users, devices, and sensors.
+There is some server logic which puts data to database about users, devices, and sensors.
 
 Serverside code is available in another project here in GitHub
 
