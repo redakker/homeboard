@@ -1,0 +1,11 @@
+<div class="profile-header-container hand" (click)="chooseThisUser()" *ngIf="user && user.avatar">   
+    		<div class="profile-header-img">
+                <img class="img-circle" [ngClass]="{'available': getUserAvailibility(), 'unavailable': !getUserAvailibility(), 'active-circle': isActive()}" src="/assets/images/{{user.avatar}}" />
+                <!-- badge -->
+                <div class="rank-label-container">
+                    <span class="label label-default rank-label" 
+                    [ngClass]="{'bg-success text-white': getUserAvailibility(), 'bg-faded': !getUserAvailibility()}"
+                    >{{user.nick}}</span>
+                </div>                
+        </div>
+</div>

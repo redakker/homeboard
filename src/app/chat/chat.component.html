@@ -1,0 +1,33 @@
+<div class="card-outline-warning card mb-3">
+  <div class="card-header card-warning card-inverse">
+    <i class="fa fa-bell-o" (click)="chooseThisUser()"></i> Üzenőfal 
+  </div>
+  <div class="list-group list-group-flush small">
+    <div *ngIf="chats"> 
+      <a href="#" class="list-group-item list-group-item-action" *ngFor="let chat of chats.reverse()">
+        <div class="media">
+          <img *ngIf="chat.avatar" class="d-flex mr-3 rounded-circle chatavatar" src="/assets/images/{{chat.avatar}}" alt="" />
+          <div class="media-body">            
+            <div [innerHTML]="chat.text | emojis"></div>
+            <div class="text-muted smaller" title="{{chat.datetime | amCalendar}}">{{chat.datetime | amTimeAgo}}</div>          
+          </div>
+        </div>   
+      </a>    
+      
+    </div>
+<div class="hr"></div>
+    <div class="input-group messageInput">
+      <img class="d-flex mr-3 rounded-circle chatavatar sender" src="/assets/images/{{user.avatar}}" alt="">
+      <input type="text" class="form-control" [disabled]="disabled" placeholder="Írd be az üzeneted..." #messageText (keyup.enter)="sendMessage(messageText)">      
+      <span class="input-group-btn">
+          <button class="btn hand pull-left" [ngClass]="{'btn-warning': !disabled, 'btn-default': disabled }" type="button" (click)="insertEmoji(':heart:', messageText)"><i class="fa fa-heart"></i></button>          
+      </span>
+      <span class="input-group-btn">
+          <button class="btn hand pull-left" [ngClass]="{'btn-warning': !disabled, 'btn-default': disabled }" type="button" (click)="insertEmoji(':smile:', messageText)"><i class="fa fa-smile-o"></i></button>          
+      </span>
+      <span class="input-group-btn">
+          <button class="btn hand pull-left" [ngClass]="{'btn-success': !disabled, 'btn-default': disabled }" type="button" (click)="sendMessage(messageText)"><i class="fa fa-send"></i></button>          
+      </span>
+    </div>
+  </div>
+</div>

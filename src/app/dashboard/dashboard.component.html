@@ -1,0 +1,95 @@
+<!-- Breadcrumbs -->
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+  <li class="breadcrumb-item active">My Dashboard</li>
+</ol>
+<!-- Icon Cards -->
+<div class="row">  
+  <div class="mb-3">
+    <app-sensor device="harness" iconOff="fa-lock" iconOn="fa-unlock" buttonStyleOn="btn-danger"  buttonStyleOff="btn-success" type="icon"></app-sensor>
+    <app-sensor device="wc" iconOff="fa-bath" iconOn="fa-bath" buttonStyleOn="btn-danger"  buttonStyleOff="btn-success" type="icon"></app-sensor>
+    <app-sensor device="wc" iconOff="fa-bath" iconOn="fa-bath" buttonStyleOn="btn-danger"  buttonStyleOff="btn-success" type="value" unit="%"></app-sensor>
+    <app-sensor device="wc" iconOff="fa-bath" iconOn="fa-bath" buttonStyleOn="btn-danger"  buttonStyleOff="btn-success" type="value" unit="C°"></app-sensor>
+  </div>
+</div>
+
+<div class="row">  
+  <div class="mb-3">
+    <app-device mac="A0:6F:AA:05:16:DB" iconOff="fa-television" iconOn="fa-television" buttonStyleOn="btn-success"  buttonStyleOff="btn-default" type="icon"></app-device>
+    <app-device mac="60:12:8B:34:86:F8" iconOff="fa-print" iconOn="fa-print" buttonStyleOn="btn-success"  buttonStyleOff="btn-default" type="icon"></app-device>
+    <app-device mac="C8:CB:B8:C9:5F:61" iconOff="fa-server" iconOn="fa-server" buttonStyleOn="btn-success"  buttonStyleOff="btn-default" type="icon"></app-device>
+    <app-device mac="BC:5F:F4:FB:D4:27" iconOff="fa-desktop" iconOn="fa-desktop" buttonStyleOn="btn-success"  buttonStyleOff="btn-default" type="icon"></app-device>
+    <app-device mac="B8:27:EB:78:60:CB" iconOff="fa-flask" iconOn="fa-flask" buttonStyleOn="btn-success"  buttonStyleOff="btn-default" type="icon"></app-device>
+  </div>
+</div>
+<!--
+<div class="row">  
+  <div class="col-xl-3 col-sm-6 mb-3">
+    
+    <div class="card card-inverse card-primary o-hidden h-100">
+      <div class="card-block">
+        <div class="card-block-icon">
+          <i class="fa fa-fw fa-comments"></i>
+        </div>
+        <div class="mr-5">          
+        </div>
+      </div>
+      <a href="#" class="card-footer clearfix small z-1">
+                            <span class="float-left">View Details</span>
+                            <span class="float-right"><i class="fa fa-angle-right"></i></span>
+                        </a>
+    </div>
+  </div>
+  <div class="col-xl-3 col-sm-6 mb-3">
+    <div class="card card-inverse card-success o-hidden h-100">
+      <div class="card-block">
+        <div class="card-block-icon">
+          <i class="fa fa-fw fa-list"></i>
+        </div>
+        <div class="mr-5">
+          11 New Tasks!
+        </div>
+      </div>
+      <a href="#" class="card-footer clearfix small z-1">
+                            <span class="float-left">View Details</span>
+                            <span class="float-right"><i class="fa fa-angle-right"></i></span>
+                        </a>
+    </div>
+  </div>
+  <div class="col-xl-3 col-sm-6 mb-3">
+    <div class="card card-inverse card-warning o-hidden h-100">
+      <div class="card-block">
+        <div class="card-block-icon">
+          <i class="fa fa-fw fa-shopping-cart"></i>
+        </div>
+        <div class="mr-5">
+          123 New Orders!
+        </div>
+      </div>
+      <a href="#" class="card-footer clearfix small z-1">
+                            <span class="float-left">View Details</span>
+                            <span class="float-right"><i class="fa fa-angle-right"></i></span>
+                        </a>
+    </div>
+  </div>
+  <div class="col-xl-3 col-sm-6 mb-3">
+    <div class="card card-inverse card-danger o-hidden h-100">
+      <div class="card-block">
+        <div class="card-block-icon">
+          <i class="fa fa-fw fa-support"></i>
+        </div>
+        <div class="mr-5">
+          13 New Tickets!
+        </div>
+      </div>
+      <a href="#" class="card-footer clearfix small z-1">
+                            <span class="float-left">View Details</span>
+                            <span class="float-right"><i class="fa fa-angle-right"></i></span>
+                        </a>
+    </div>
+  </div>
+</div>
+-->
+<app-chat></app-chat>
+<app-serverload></app-serverload>
+

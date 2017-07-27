@@ -1,0 +1,27 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "cards.scss";
+@import "navbar.scss"; 
+
+html {
+  outline: none !important;
+}
+
+.userimage {
+  width: 50px;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.hr{
+  height: 1px;
+  background: $gray-lighter;
+  margin: 5px;
+}
+
+.emoji{
+    display:inline-block;
+}

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  dbUrl: '192.168.1.190:8181'
 };

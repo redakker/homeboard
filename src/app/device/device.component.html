@@ -1,0 +1,9 @@
+
+<div class="device">
+    <div *ngIf="type == 'icon'">
+        <button class="btn hand deviceButton" [ngClass]="getButtonStyle(device)">
+            <i class="fa fa-4x {{ getIcon(device) }}"></i>
+        </button>      
+        <div *ngIf="device" class=" time text-center" title="{{device.time | amCalendar}}"><small>{{device.time | amTimeAgo}}</small></div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="sensor">
+    <div *ngIf="type == 'icon'">
+        <button class="btn hand sensorButton" [ngClass]="getButtonStyle()">
+            <i class="fa fa-4x {{ getIcon() }}"></i>
+        </button>      
+        <!--
+        <div *ngIf="sensor"><small>{{sensor.time | amDateFormat:'MM-DD'}}</small></div>
+        <div *ngIf="sensor"><small>{{sensor.time | amDateFormat:'hh:mm'}}</small></div>
+        -->
+        <div *ngIf="sensor" class=" time text-center" title="{{sensor.time | amCalendar}}"><small>{{sensor.time | amTimeAgo}}</small></div>
+    </div>
+
+    <div *ngIf="type == 'value'">
+        <button class="btn hand sensorButton" [ngClass]="getButtonStyle()">
+            <div class="center-text valuetext"> <span class="unit">{{unit}}</span></div>
+        </button>
+        <!--
+        <div *ngIf="sensor"><small>{{sensor.time | amDateFormat:'MM-DD'}}</small></div>
+        <div *ngIf="sensor"><small>{{sensor.time | amDateFormat:'hh:mm'}}</small></div>
+        -->
+        <div *ngIf="sensor" class=" time text-center" title="{{sensor.time | amCalendar}}"><small>{{sensor.time | amTimeAgo}}</small></div>
+    </div>
+</div>
